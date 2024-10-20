@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Voetbalscores</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,58 +12,68 @@
         <h1>Voetbalscores</h1>
         <h4>Alle scores van de top 5 Leagues</h4>
     </header>
+
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Nederland <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="Eredivisie.html">Eredivisie</a>
+                <a href="InternationaalNL.html">Internationaal</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Engeland <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="PremierLeague.html">Premier League</a>
+                <a href="InternationaalEN.html">Internationaal</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Spanje <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="LaLiga.html">La Liga</a>
+                <a href="InternationaalSP.html">Internationaal</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Frankrijk <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="Ligue1.html">Ligue 1</a>
+                <a href="InternationaalFR.hmtl">Internationaal</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">België <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="JupilerPro.html">Jupiler Pro League</a>
+                <a href="InternationaalBE.html">Internationaal</a>
+            </div>
+        </div>
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
+
+    <main>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
-
-<nav>
-    <ul>
-        <div class="dropdown"><li>
-            <button class="dropdown">Nederland</button>
-            <div class="dropdown-content">
-              <a href="#">Eredivisie</a>
-              <a href="#">Internationaal</a>
-            </div></li>
-<li>        
-
-          </div><div class="dropdown">
-            <button class="dropdown">Engeland</button>
-            <div class="dropdown-content">
-              <a href="#">Premier League</a>
-              <a href="#">Internationaal</a>
-            </div>
-            </li>
-
-<li>
-          </div><div class="dropdown">
-            <button class="dropdown">Spanje</button>
-            <div class="dropdown-content">
-              <a href="#">Laliga</a>
-              <a href="#">Internationaal</a>
-            </div>
-            </li>
-
-            <li>
-          </div><div class="dropdown">
-            <button class="dropdown">Frankrijk</button>
-            <div class="dropdown-content">
-              <a href="#">Ligue 1</a>
-              <a href="#">Internationaal</a>
-            </div>
-            </li>
-            <li>
-          </div><div class="dropdown">
-            <button class="dropdown">België</button>
-            <div class="dropdown-content">
-              <a href="#">Jupiler Pro League</a>
-              <a href="#">Internationaal</a>
-            </div>
-          </div>
-       </li>
-    </ul>
-</nav>
-
-<main></main>
-
-<footer></footer>
-
-<script src="js/main.js"></script>
 </html>
